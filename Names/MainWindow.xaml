@@ -22,5 +22,9 @@
 
         <ListBox Grid.Row="1" x:Name="ListNames"></ListBox>
 
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="5, 0, 0, 0"></StackPanel>
+
+
+
     </Grid>
 </Window>
