@@ -20,5 +20,18 @@ namespace Names
         {
             InitializeComponent();
         }
+
+        private void ButtonAddName_Click(object sender, RoutedEventArgs e)
+        {
+            //1.确保文本框包含名称。
+            //2.验证文本框中输入的名称是否已经存在。
+            //3.将名称添加到列表框。
+
+            if (!string.IsNullOrWhiteSpace(txtName.Text) && !ListNames.Items.Contains(txtName.Text))
+            {
+                ListNames.Items.Add(txtName.Text);
+                txtName.Clear();
+            }
+        }
     }
 }
